@@ -1,16 +1,44 @@
 = activeresource-conditional-get
 
-Description goes here.
+HTTP conditional get support for ActiveResource.
+
+== Installation
+
+Add this line to your application's Gemfile:
+
+    gem 'activeresource-conditional-get'
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install activeresource-conditional-get
+
+== Usage
+
+Works out of box after adding:
+
+    ActiveResource::Base.cache = Rails.cache
+    
+Or
+  
+    ActiveResource::Base.cache = ActiveSupport::Cache.lookup_store(:mem_cache_store)
+    
+
+== References
+
+* [activeresource](https://github.com/rails/activeresource)
+* [HTTP Conditional Get](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
 
 == Contributing to activeresource-conditional-get
- 
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
-* Fork the project.
-* Start a feature/bugfix branch.
-* Commit and push until you are happy with your contribution.
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+
+* Fork it
+* Create your feature branch (`git checkout -b my-new-feature`)
+* Commit your changes (`git commit -am 'Added some feature'`)
+* Push to the branch (`git push origin my-new-feature`)
+* Create new Pull Request
 
 == Copyright
 
