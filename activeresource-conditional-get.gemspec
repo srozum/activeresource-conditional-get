@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "activeresource-conditional-get.gemspec",
     "lib/active_resource/conditional_get.rb",
     "lib/active_resource/conditional_get/base.rb",
     "lib/active_resource/conditional_get/connection.rb",
